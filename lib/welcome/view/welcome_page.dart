@@ -16,7 +16,6 @@ class _WelcomeView extends StatelessWidget {
     final size = MediaQuery.of(context).size;
 
     return Scaffold(
-      backgroundColor: Colors.grey[200],
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(12),
@@ -66,7 +65,6 @@ class Poster extends StatelessWidget {
             borderRadius: BorderRadius.circular(
               12,
             ),
-            color: Colors.red,
           ),
           alignment: Alignment.center,
           child: Text(
@@ -90,6 +88,8 @@ class _IndexPoster extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final scheme = Theme.of(context).colorScheme;
+
     Widget iCircle({required bool isActive}) => Container(
           width: isActive ? 16 : 8,
           height: isActive ? 16 : 8,

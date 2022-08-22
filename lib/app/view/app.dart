@@ -5,8 +5,8 @@
 // license that can be found in the LICENSE file or at
 // https://opensource.org/licenses/MIT.
 
-import 'package:apprecio_clone/counter/counter.dart';
 import 'package:apprecio_clone/l10n/l10n.dart';
+import 'package:apprecio_clone/utils/apprecio_theme.dart';
 import 'package:apprecio_clone/welcome/welcome.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -17,13 +17,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-        appBarTheme: const AppBarTheme(color: Colors.red),
-        colorScheme: ColorScheme.fromSwatch(
-          accentColor: Colors.red,
-        ),
-        primaryColor: Colors.red,
-      ),
+      theme: theme,
       localizationsDelegates: const [
         AppLocalizations.delegate,
         GlobalMaterialLocalizations.delegate,
