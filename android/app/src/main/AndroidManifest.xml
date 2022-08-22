@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.verygoodcore.apprecio_clon">
+    package="com.example.verygoodcore.apprecio_clone">
    <application
         android:label="${appName}"
         android:icon="@mipmap/ic_launcher">

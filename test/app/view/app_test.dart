@@ -5,8 +5,8 @@
 // license that can be found in the LICENSE file or at
 // https://opensource.org/licenses/MIT.
 
-import 'package:apprecio_clon/app/app.dart';
-import 'package:apprecio_clon/counter/counter.dart';
+import 'package:apprecio_clone/app/app.dart';
+import 'package:apprecio_clone/counter/counter.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

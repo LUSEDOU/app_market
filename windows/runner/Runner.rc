@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.example.verygoodcore.apprecio-clon" "\0"
-            VALUE "FileDescription", "apprecio_clon" "\0"
+            VALUE "CompanyName", "com.example.verygoodcore.apprecio-clone" "\0"
+            VALUE "FileDescription", "apprecio_clone" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "apprecio_clon" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2022 com.example.verygoodcore.apprecio-clon. All rights reserved." "\0"
-            VALUE "OriginalFilename", "apprecio_clon.exe" "\0"
-            VALUE "ProductName", "Apprecio Clon" "\0"
+            VALUE "InternalName", "apprecio_clone" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2022 com.example.verygoodcore.apprecio-clone. All rights reserved." "\0"
+            VALUE "OriginalFilename", "apprecio_clone.exe" "\0"
+            VALUE "ProductName", "Apprecio Clone" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
