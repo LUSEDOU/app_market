@@ -5,9 +5,9 @@
 // license that can be found in the LICENSE file or at
 // https://opensource.org/licenses/MIT.
 
+import 'package:apprecio_clone/home/home.dart';
 import 'package:apprecio_clone/l10n/l10n.dart';
 import 'package:apprecio_clone/utils/apprecio_theme.dart';
-import 'package:apprecio_clone/welcome/welcome.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
@@ -23,7 +23,7 @@ class App extends StatelessWidget {
         GlobalMaterialLocalizations.delegate,
       ],
       supportedLocales: AppLocalizations.supportedLocales,
-      home: const WelcomePage(),
+      home: const HomePage(),
     );
   }
 }
