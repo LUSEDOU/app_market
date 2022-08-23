@@ -11,11 +11,11 @@ const apprecioPalette = ColorPalette(
     dark: kRedTone10,
   ),
   secondary: ColorIn(
-    light: kRedTone90,
-    midLight: kRedTone70,
-    normal: kRedTone50,
-    midDark: kRedTone30,
-    dark: kRedTone10,
+    light: kBlueTone90,
+    midLight: kBlueTone70,
+    normal: kBlueTone50,
+    midDark: kBlueTone30,
+    dark: kBlueTone10,
   ),
   tertiary: ColorIn(
     light: kRedTone90,

@@ -18,8 +18,8 @@ const kOrangeTone50 = Color(0xFFfb4d62);
 const kOrangeTone70 = Color(0xFFfb4d62);
 const kOrangeTone90 = Color(0xFFfb4d62);
 
-const kBlueTone10 = Color(0xFFfb4d62);
-const kBlueTone30 = Color(0xFFfb4d62);
-const kBlueTone50 = Color(0xFFfb4d62);
-const kBlueTone70 = Color(0xFFfb4d62);
-const kBlueTone90 = Color(0xFFfb4d62);
+const kBlueTone10 = Color(0xFF062023);
+const kBlueTone30 = Color(0xFFd2ecef);
+const kBlueTone50 = Color(0xFF1fa0b0);
+const kBlueTone70 = Color(0xFF79c6d0);
+const kBlueTone90 = Color(0xFFd2ecef);

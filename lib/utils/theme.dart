@@ -20,6 +20,7 @@ ThemeData buildThemeData({required ColorPalette palette}) {
       onTertiary: palette.tertiary.white,
       tertiaryContainer: palette.tertiary.light,
       onTertiaryContainer: palette.tertiary.black,
+      background: palette.secondary.light,
     ),
   );
 }
