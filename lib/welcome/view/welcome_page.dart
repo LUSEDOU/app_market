@@ -96,7 +96,7 @@ class _IndexPoster extends StatelessWidget {
           key: UniqueKey(),
           decoration: BoxDecoration(
             shape: BoxShape.circle,
-            color: isActive ? Colors.red : Colors.red[200],
+            color: isActive ? scheme.primary : Colors.red[200],
           ),
         );
 
