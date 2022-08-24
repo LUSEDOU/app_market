@@ -1,7 +1,31 @@
 {
     "@@locale": "en",
-    "counterAppBarTitle": "Counter",
-    "@counterAppBarTitle": {
-        "description": "Text shown in the AppBar of the Counter Page"
+    "homeProfileRouteTitle": "Hi! Pierre",
+    "@homeProfileRouteTitle": {
+        "description": "Title shown in the Profile Route of the Home Page"
+    },
+    "homeProfileRouteSubtitle": "Complete your profile",
+    "@homeProfileRouteSubtitle": {
+        "description": "Subtitle shown in the Profile Route of the Home Page"
+    },
+    "homeButtonRegister": "Register",
+    "@homeButtonRegister": {
+        "description": "Text shown in the Register Button of the Home Page"
+    },
+    "homeButtonComparator": "Comparator",
+    "@homeButtonComparator": {
+        "description": "Text shown in the Comparator Button of the Home Page"
+    },
+    "homeButtonInventory": "Inventory",
+    "@homeButtonInventory": {
+        "description": "Text shown in the Inventory Button of the Home Page"
+    },
+    "homeButtonWallet": "Wallet",
+    "@homeButtonWallet": {
+        "description": "Text shown in the Wallet Button of the Home Page"
+    },
+    "homeButtonProfile": "Profile",
+    "@homeButtonProfile": {
+        "description": "Text shown in the Profile Button of the Home Page"
     }
 }

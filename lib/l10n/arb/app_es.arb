@@ -1,7 +1,31 @@
 {
     "@@locale": "es",
-    "counterAppBarTitle": "Contador",
-    "@counterAppBarTitle": {
-        "description": "Texto mostrado en la AppBar de la página del contador"
+    "homeProfileRouteTitle": "Hola! Pierre",
+    "@homeProfileRouteTitle": {
+        "description": "Title shown in the Profile Route of the Home Page"
+    },
+    "homeProfileRouteSubtitle": "Completa tu perfil",
+    "@homeProfileRouteSubtitle": {
+        "description": "Subtitle shown in the Profile Route of the Home Page"
+    },
+    "homeButtonRegister": "Registradora",
+    "@homeButtonRegister": {
+        "description": "Text shown in the Register Button of the Home Page"
+    },
+    "homeButtonComparator": "Comparador",
+    "@homeButtonComparator": {
+        "description": "Text shown in the Comparator Button of the Home Page"
+    },
+    "homeButtonInventory": "Inventario",
+    "@homeButtonInventory": {
+        "description": "Text shown in the Inventory Button of the Home Page"
+    },
+    "homeButtonWallet": "Cobros digitales",
+    "@homeButtonWallet": {
+        "description": "Text shown in the Wallet Button of the Home Page"
+    },
+    "homeButtonProfile": "Perfil",
+    "@homeButtonProfile": {
+        "description": "Text shown in the Profile Button of the Home Page"
     }
 }
