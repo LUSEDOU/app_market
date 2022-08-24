@@ -101,7 +101,6 @@ class _HomeView extends StatelessWidget {
                           TextButton(
                             onPressed: () {},
                             child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisSize: MainAxisSize.min,
                               children: [
