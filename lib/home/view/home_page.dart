@@ -57,11 +57,23 @@ class _HomeView extends StatelessWidget {
                                 child: CircleAvatar(
                                   backgroundColor: scheme.onPrimary,
                                   radius: avatarSize * 8 / 9,
-                                  child: const CircleAvatar(
+                                  child: CircleAvatar(
                                     radius: (avatarSize * 8 / 9) - 3,
-                                    backgroundImage: NetworkImage(
+                                    backgroundImage: const NetworkImage(
                                       'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png',
                                     ),
+                                    onBackgroundImageError:
+                                        (exception, stackTrace) =>
+                                            ScaffoldMessenger.of(context)
+                                              ..hideCurrentSnackBar()
+                                              ..showSnackBar(
+                                                const SnackBar(
+                                                  content: Text(
+                                                    'Connect to wifi please',
+                                                  ),
+                                                ),
+                                              ),
+                                    backgroundColor: scheme.onBackground,
                                   ),
                                 ),
                               ),
