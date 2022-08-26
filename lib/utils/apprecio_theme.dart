@@ -24,6 +24,13 @@ const apprecioPalette = ColorPalette(
     midDark: kRedTone30,
     dark: kRedTone10,
   ),
+  quaternary: ColorIn(
+    light: kRedTone90,
+    midLight: kRedTone70,
+    normal: kRedTone50,
+    midDark: kRedTone30,
+    dark: kRedTone10,
+  ),
 );
 
 ThemeData theme = buildThemeData(palette: apprecioPalette);
