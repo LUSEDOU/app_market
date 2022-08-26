@@ -5,11 +5,13 @@ class ColorPalette {
     required this.primary,
     required this.secondary,
     required this.tertiary,
+    required this.quaternary,
   });
 
   final ColorIn primary;
   final ColorIn secondary;
   final ColorIn tertiary;
+  final ColorIn quaternary;
 }
 
 class ColorIn {
