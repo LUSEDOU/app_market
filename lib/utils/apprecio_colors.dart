@@ -6,6 +6,12 @@ const kRedTone50 = Color(0xFFfb4d62);
 const kRedTone30 = Color(0xFFfda6b1);
 const kRedTone10 = Color(0xFFfedbe0);
 
+const kGreenTone10 = Color(0xFFfb4d62);
+const kGreenTone30 = Color(0xFFfb4d62);
+const kGreenTone50 = Color(0xFFfb4d62);
+const kGreenTone70 = Color(0xFFfb4d62);
+const kGreenTone90 = Color(0xFFfb4d62);
+
 const kWhiteTone10 = Color(0xFFfb4d62);
 const kWhiteTone30 = Color(0xFFfb4d62);
 const kWhiteTone50 = Color(0xFFfb4d62);
