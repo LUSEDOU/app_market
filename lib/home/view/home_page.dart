@@ -39,6 +39,18 @@ class HomeView extends StatelessWidget {
                 width: size.width,
                 colorBlendMode: BlendMode.screen,
                 color: scheme.primary,
+                errorBuilder: (context, exception, stackTrace) {
+                  ScaffoldMessenger.of(context)
+                    ..hideCurrentSnackBar()
+                    ..showSnackBar(
+                      const SnackBar(
+                        content: Text(
+                          'Connect to wifi please',
+                        ),
+                      ),
+                    );
+                  return const Text('Connect to wifi please');
+                },
               ),
             ),
           ),
