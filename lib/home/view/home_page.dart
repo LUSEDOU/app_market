@@ -138,7 +138,7 @@ class HomeView extends StatelessWidget {
             sliver: SliverGrid(
               delegate: SliverChildBuilderDelegate(
                 (BuildContext context, int index) {
-                  return Container(
+                  return ColoredBox(
                     color: index.isOdd ? Colors.white : Colors.black12,
                     child: Center(
                       child: Text('$index', textScaleFactor: 5),
