@@ -39,18 +39,8 @@ class HomeView extends StatelessWidget {
                 width: size.width,
                 colorBlendMode: BlendMode.screen,
                 color: scheme.primary,
-                errorBuilder: (context, exception, stackTrace) {
-                  ScaffoldMessenger.of(context)
-                    ..hideCurrentSnackBar()
-                    ..showSnackBar(
-                      const SnackBar(
-                        content: Text(
-                          'Connect to wifi please',
-                        ),
-                      ),
-                    );
-                  return const Text('Connect to wifi please');
-                },
+                errorBuilder: (context, exception, stackTrace) =>
+                    const Text('Connect to wifi please'),
               ),
             ),
           ),
@@ -75,15 +65,9 @@ class HomeView extends StatelessWidget {
                               'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png',
                             ),
                             onBackgroundImageError: (exception, stackTrace) =>
-                                ScaffoldMessenger.of(context)
-                                  ..hideCurrentSnackBar()
-                                  ..showSnackBar(
-                                    const SnackBar(
-                                      content: Text(
-                                        'Connect to wifi please',
-                                      ),
-                                    ),
-                                  ),
+                                const Text(
+                              'Connect to wifi please',
+                            ),
                             backgroundColor: scheme.onBackground,
                           ),
                         ),
