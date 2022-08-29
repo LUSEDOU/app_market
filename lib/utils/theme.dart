@@ -1,4 +1,4 @@
-import 'package:apprecio_clone/utils/utils.dart';
+import 'package:app_market/utils/utils.dart';
 import 'package:flutter/material.dart';
 
 ThemeData buildThemeData({required ColorPalette palette}) {

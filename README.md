@@ -92,7 +92,7 @@ This project relies on [flutter_localizations][flutter_localizations_link] and f
 3. Use the new string
 
 ```dart
-import 'package:apprecio_clone/l10n/l10n.dart';
+import 'package:app_market/l10n/l10n.dart';
 
 @override
 Widget build(BuildContext context) {
