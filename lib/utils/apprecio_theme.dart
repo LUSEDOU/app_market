@@ -1,5 +1,5 @@
-import 'package:apprecio_clone/utils/apprecio_colors.dart';
-import 'package:apprecio_clone/utils/utils.dart';
+import 'package:app_market/utils/apprecio_colors.dart';
+import 'package:app_market/utils/utils.dart';
 import 'package:flutter/material.dart';
 
 const apprecioPalette = ColorPalette(
