@@ -1,3 +1,4 @@
+import 'package:app_market/l10n/l10n.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -14,6 +15,7 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = context.l10n;
     final scheme = Theme.of(context).colorScheme;
     final size = MediaQuery.of(context).size;
 
@@ -133,14 +135,15 @@ class HomeView extends StatelessWidget {
             padding: const EdgeInsets.all(16),
             sliver: SliverGrid(
               delegate: SliverChildBuilderDelegate(
-                (BuildContext context, int index) {
+                (context, int index) {
                   return ColoredBox(
-                    color: index.isOdd ? Colors.white : Colors.black12,
+                    color: scheme.primary,
                     child: Center(
-                      child: Text('$index', textScaleFactor: 5),
+                      child: Text(pages[index]),
                     ),
                   );
                 },
+                childCount: pages.length,
               ),
               gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
                 maxCrossAxisExtent: 200,
@@ -154,3 +157,11 @@ class HomeView extends StatelessWidget {
     );
   }
 }
+
+const pages = [
+  'register',
+  'comparator',
+  'inventory',
+  'wallet',
+  'profile',
+];
