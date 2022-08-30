@@ -1,22 +1,33 @@
 {
     "@@locale": "en",
-    "homePage": "Home",
-    "@homePage": {
-    "description": "Title of the Home Page",
-        "profileRoute": {
-            "title": "Hi! Pierre",
-            "subtitle": "Complete your profile"
-        },
-        "@profileRoute": {
-            "description": "Title shown in the Profile Route of the Home Page"
-        },
-        "button": {
-            "register": "Register",
-            "comparator": "Comparator",
-            "inventory": "Inventory",
-            "wallet": "Wallet",
-            "profile": "profile"
-            
+    "homePageProfileRouteTitle": "Hi! {username}",
+    "@homePageProfileRouteTitle": {
+        "placeholder": {
+            "username": {}
         }
+    },
+    "homePageProfileRouteSubtitle": "Complete your profile",
+    "@homePageProfileRouteSubtitle": {
+        "description": "Subtitle of the home page profile route"
+    },
+    "homePageButtonRegister": "Register",
+    "@homePageButtonRegister": {
+        "description": "Title of the Register button"
+    },
+    "homePageButtonComparator": "Comparator",
+    "@homePageButtonComparator": {
+        "description": "Title of the Comparator button"
+    },
+    "homePageButtonInventory": "Inventory",
+    "@homePageButtonInventory": {
+        "description": "Title of the Inventory button"
+    },
+    "homePageButtonWallet": "Wallet",
+    "@homePageButtonWallet": {
+        "description": "Title of the Wallet button"
+    },
+    "homePageButtonProfile": "Profile",
+    "@homePageButtonProfile": {
+        "description": "Title of the Profile button"
     }
 }

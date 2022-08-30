@@ -1,21 +1,33 @@
 {
     "@@locale": "es",
-    "homePage": "Inicio",
-    "@homePage": {
-    "description": "Title of the Home Page",
-        "profileRoute": {
-            "title": "Hola! Pierre",
-            "subtitle": "Completa tu perfil"
-        },
-        "@profileRoute": {
-            "description": "Title shown in the Profile Route of the Home Page"
-        },
-        "button": {
-            "register": "Registradora",
-            "comparator": "Comparador",
-            "inventory": "Inventario",
-            "wallet": "Cobros digitales",
-            "profile": "Perfil"
+    "homePageProfileRouteTitle": "Hola! {username}",
+    "@homePageProfileRouteTitle": {
+        "placeholder": {
+            "username": {}
         }
+    },
+    "homePageProfileRouteSubtitle": "Completa tu perfil",
+    "@homePageProfileRouteSubtitle": {
+        "description": "Subtitle of the home page profile route"
+    },
+    "homePageButtonRegister": "Registradora",
+    "@homePageButtonRegister": {
+        "description": "Title of the Register button"
+    },
+    "homePageButtonComparator": "Comparador",
+    "@homePageButtonComparator": {
+        "description": "Title of the Comparator button"
+    },
+    "homePageButtonInventory": "Inventario",
+    "@homePageButtonInventory": {
+        "description": "Title of the Inventory button"
+    },
+    "homePageButtonWallet": "Cobros Digitales",
+    "@homePageButtonWallet": {
+        "description": "Title of the Wallet button"
+    },
+    "homePageButtonProfile": "Perfil",
+    "@homePageButtonProfile": {
+        "description": "Title of the Profile button"
     }
 }
