@@ -1,9 +1,8 @@
 import 'package:app_market/home/home.dart';
 import 'package:app_market/l10n/l10n.dart';
-import 'package:app_market/utils/apprecio_theme.dart';
 import 'package:flutter/material.dart';
 
-List<PageButton Function(BuildContext)> pageButtons = [
+List<PageButton Function(AppLocalizations, ColorScheme)> pageButtons = [
   _registerButton,
   _comparatorButton,
   _inventoryButton,
@@ -11,32 +10,37 @@ List<PageButton Function(BuildContext)> pageButtons = [
   _profileButton,
 ];
 
-PageButton _profileButton(BuildContext context) => PageButton(
-      l10n: context.l10n.homePageButtonProfile,
-      pageName: 'login',
-      color: theme.colorScheme.primary,
-    );
-
-PageButton _walletButton(BuildContext context) => PageButton(
-      l10n: context.l10n.homePageButtonWallet,
-      pageName: 'wallet',
-      color: theme.colorScheme.primary,
-    );
-
-PageButton _registerButton(BuildContext context) => PageButton(
-      l10n: context.l10n.homePageButtonRegister,
+PageButton _registerButton(AppLocalizations l10n, ColorScheme scheme) =>
+    PageButton(
+      l10n: l10n.homePageButtonRegister,
       pageName: 'market',
-      color: theme.colorScheme.primary,
+      color: scheme.primary,
     );
 
-PageButton _inventoryButton(BuildContext context) => PageButton(
-      l10n: context.l10n.homePageButtonInventory,
-      pageName: 'inventory',
-      color: theme.colorScheme.primary,
-    );
-
-PageButton _comparatorButton(BuildContext context) => PageButton(
-      l10n: context.l10n.homePageButtonComparator,
+PageButton _comparatorButton(AppLocalizations l10n, ColorScheme scheme) =>
+    PageButton(
+      l10n: l10n.homePageButtonComparator,
       pageName: 'comparator',
-      color: theme.colorScheme.primary,
+      color: scheme.primary,
+    );
+
+PageButton _inventoryButton(AppLocalizations l10n, ColorScheme scheme) =>
+    PageButton(
+      l10n: l10n.homePageButtonInventory,
+      pageName: 'inventory',
+      color: scheme.primary,
+    );
+
+PageButton _walletButton(AppLocalizations l10n, ColorScheme scheme) =>
+    PageButton(
+      l10n: l10n.homePageButtonWallet,
+      pageName: 'wallet',
+      color: scheme.secondary,
+    );
+
+PageButton _profileButton(AppLocalizations l10n, ColorScheme scheme) =>
+    PageButton(
+      l10n: l10n.homePageButtonProfile,
+      pageName: 'login',
+      color: scheme.onPrimary,
     );

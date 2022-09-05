@@ -137,7 +137,7 @@ class HomeView extends StatelessWidget {
             sliver: SliverGrid(
               delegate: SliverChildBuilderDelegate(
                 (context, int index) {
-                  return pageButtons[index](context);
+                  return pageButtons[index](l10n, scheme);
                 },
                 childCount: pageButtons.length,
               ),
@@ -153,11 +153,3 @@ class HomeView extends StatelessWidget {
     );
   }
 }
-
-const pages = [
-  'register',
-  'comparator',
-  'inventory',
-  'wallet',
-  'profile',
-];
