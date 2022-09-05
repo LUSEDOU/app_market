@@ -4,8 +4,11 @@ import 'package:app_market/utils/apprecio_theme.dart';
 import 'package:flutter/material.dart';
 
 List<PageButton Function(BuildContext)> pageButtons = [
-  _profileButton,
+  _registerButton,
+  _comparatorButton,
+  _inventoryButton,
   _walletButton,
+  _profileButton,
 ];
 
 PageButton _profileButton(BuildContext context) => PageButton(
@@ -17,5 +20,23 @@ PageButton _profileButton(BuildContext context) => PageButton(
 PageButton _walletButton(BuildContext context) => PageButton(
       l10n: context.l10n.homePageButtonWallet,
       pageName: 'wallet',
+      color: theme.colorScheme.primary,
+    );
+
+PageButton _registerButton(BuildContext context) => PageButton(
+      l10n: context.l10n.homePageButtonRegister,
+      pageName: 'market',
+      color: theme.colorScheme.primary,
+    );
+
+PageButton _inventoryButton(BuildContext context) => PageButton(
+      l10n: context.l10n.homePageButtonInventory,
+      pageName: 'inventory',
+      color: theme.colorScheme.primary,
+    );
+
+PageButton _comparatorButton(BuildContext context) => PageButton(
+      l10n: context.l10n.homePageButtonComparator,
+      pageName: 'comparator',
       color: theme.colorScheme.primary,
     );
