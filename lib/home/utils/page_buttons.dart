@@ -21,21 +21,23 @@ PageButton _comparatorButton(AppLocalizations l10n, ColorScheme scheme) =>
     PageButton(
       l10n: l10n.homePageButtonComparator,
       pageName: 'comparator',
-      color: scheme.primary,
+      color: scheme.secondary,
     );
 
 PageButton _inventoryButton(AppLocalizations l10n, ColorScheme scheme) =>
     PageButton(
       l10n: l10n.homePageButtonInventory,
       pageName: 'inventory',
-      color: scheme.primary,
+      color: scheme.tertiary,
     );
 
 PageButton _walletButton(AppLocalizations l10n, ColorScheme scheme) =>
     PageButton(
       l10n: l10n.homePageButtonWallet,
       pageName: 'wallet',
-      color: scheme.secondary,
+      color: scheme.primary,
+      gradient: true,
+      gradientColor: scheme.onPrimary,
     );
 
 PageButton _profileButton(AppLocalizations l10n, ColorScheme scheme) =>

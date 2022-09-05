@@ -12,11 +12,11 @@ class PageButton extends StatelessWidget {
     this.gradient = false,
     this.gradientColor,
   })  : assert(
-          !differentRoute && route == null,
+          differentRoute || route == null,
           "Route can't be null when differentRoute is true",
         ),
         assert(
-          !gradient && gradientColor == null,
+          gradient || gradientColor == null,
           "Gradient color can't be null when gradient is true",
         );
 
@@ -40,8 +40,6 @@ class PageButton extends StatelessWidget {
                   color,
                   gradientColor!,
                 ],
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
               )
             : null,
       ),
