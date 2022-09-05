@@ -22,33 +22,33 @@ class AppNavigator {
     }
 
     switch (settings.name) {
-      case AppRoutes.about:
+      case AppRoute.about:
         return _pageRoute();
-      case AppRoutes.contact:
+      case AppRoute.contact:
         return _pageRoute();
-      case AppRoutes.forgotPassword:
+      case AppRoute.forgotPassword:
         return _pageRoute();
-      case AppRoutes.help:
+      case AppRoute.help:
         return _pageRoute();
-      case AppRoutes.home:
+      case AppRoute.home:
         return _pageRoute();
-      case AppRoutes.init:
+      case AppRoute.init:
         return _pageRoute();
-      case AppRoutes.login:
+      case AppRoute.login:
         return _pageRoute();
-      case AppRoutes.notFound:
+      case AppRoute.notFound:
         return _pageRoute();
-      case AppRoutes.privacy:
+      case AppRoute.privacy:
         return _pageRoute();
-      case AppRoutes.profile:
+      case AppRoute.profile:
         return _pageRoute();
-      case AppRoutes.register:
+      case AppRoute.register:
         return _pageRoute();
-      case AppRoutes.resetPassword:
+      case AppRoute.resetPassword:
         return _pageRoute();
-      case AppRoutes.settings:
+      case AppRoute.settings:
         return _pageRoute();
-      case AppRoutes.terms:
+      case AppRoute.terms:
         return _pageRoute();
       default:
         return _pageRoute();
@@ -56,17 +56,17 @@ class AppNavigator {
   }
 
   static Future<void> push<T>(Routes route, [T? arguments]) async =>
-      state.pushNamed(AppRoutes.of(route)!, arguments: arguments);
+      state.pushNamed(AppRoute.of(route)!, arguments: arguments);
 
   static Future<void> pushReplacement<T>(Routes route, [T? arguments]) async =>
-      state.pushReplacementNamed(AppRoutes.of(route)!, arguments: arguments);
+      state.pushReplacementNamed(AppRoute.of(route)!, arguments: arguments);
 
   static Future<void> pushAndRemoveUntil<T>(
     Routes route, [
     T? arguments,
   ]) async =>
       state.pushNamedAndRemoveUntil(
-        AppRoutes.of(route)!,
+        AppRoute.of(route)!,
         (route) => false,
         arguments: arguments,
       );

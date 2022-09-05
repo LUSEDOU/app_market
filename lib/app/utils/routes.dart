@@ -14,7 +14,7 @@ enum Routes {
   terms,
 }
 
-class AppRoutes {
+class AppRoute {
   static const String about = '/about';
   static const String contact = '/contact';
   static const String forgotPassword = '/forgot-password';
@@ -31,19 +31,19 @@ class AppRoutes {
   static const String terms = '/terms';
 
   static const Map<Routes, String> routes = {
-    Routes.about: AppRoutes.about,
-    Routes.contact: AppRoutes.contact,
-    Routes.forgotPassword: AppRoutes.forgotPassword,
-    Routes.help: AppRoutes.help,
-    Routes.home: AppRoutes.home,
-    Routes.login: AppRoutes.login,
-    Routes.notFound: AppRoutes.notFound,
-    Routes.privacy: AppRoutes.privacy,
-    Routes.profile: AppRoutes.profile,
-    Routes.register: AppRoutes.register,
-    Routes.resetPassword: AppRoutes.resetPassword,
-    Routes.settings: AppRoutes.settings,
-    Routes.terms: AppRoutes.terms,
+    Routes.about: AppRoute.about,
+    Routes.contact: AppRoute.contact,
+    Routes.forgotPassword: AppRoute.forgotPassword,
+    Routes.help: AppRoute.help,
+    Routes.home: AppRoute.home,
+    Routes.login: AppRoute.login,
+    Routes.notFound: AppRoute.notFound,
+    Routes.privacy: AppRoute.privacy,
+    Routes.profile: AppRoute.profile,
+    Routes.register: AppRoute.register,
+    Routes.resetPassword: AppRoute.resetPassword,
+    Routes.settings: AppRoute.settings,
+    Routes.terms: AppRoute.terms,
   };
 
   static String? of(Routes route) => routes[route];
