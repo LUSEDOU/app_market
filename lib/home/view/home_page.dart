@@ -1,3 +1,4 @@
+import 'package:app_market/home/home.dart';
 import 'package:app_market/l10n/l10n.dart';
 import 'package:flutter/material.dart';
 
@@ -136,14 +137,9 @@ class HomeView extends StatelessWidget {
             sliver: SliverGrid(
               delegate: SliverChildBuilderDelegate(
                 (context, int index) {
-                  return ColoredBox(
-                    color: scheme.primary,
-                    child: Center(
-                      child: Text(pages[index]),
-                    ),
-                  );
+                  return pageButtons[index](context);
                 },
-                childCount: pages.length,
+                childCount: pageButtons.length,
               ),
               gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
                 maxCrossAxisExtent: 200,
