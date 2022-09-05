@@ -32,6 +32,7 @@ class PageButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return DecoratedBox(
       decoration: BoxDecoration(
+        color: color,
         borderRadius: BorderRadius.circular(16),
         gradient: gradient
             ? LinearGradient(
@@ -45,7 +46,7 @@ class PageButton extends StatelessWidget {
             : null,
       ),
       child: Center(
-        child: Text(l10n),
+        child: Text(l10n.toUpperCase()),
       ),
     );
   }
