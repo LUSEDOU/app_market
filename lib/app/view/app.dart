@@ -7,7 +7,7 @@
 
 import 'package:app_market/home/home.dart';
 import 'package:app_market/l10n/l10n.dart';
-import 'package:app_market/utils/apprecio_theme.dart';
+import 'package:app_market/utils/flex_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
@@ -22,6 +22,7 @@ class App extends StatelessWidget {
         AppLocalizations.delegate,
         GlobalMaterialLocalizations.delegate,
       ],
+      darkTheme: darkTheme,
       supportedLocales: AppLocalizations.supportedLocales,
       home: const HomePage(),
     );
