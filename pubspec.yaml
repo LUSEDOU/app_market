@@ -10,6 +10,7 @@ environment:
 dependencies:
   bloc: ^8.1.0
   card_swiper: ^2.0.4
+  flex_color_scheme: ^5.1.0
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.1
